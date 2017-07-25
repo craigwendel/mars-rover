@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import GetImageButton from './GetImageButton'
 import ImageDisplay from './ImageDisplay'
+import '../styles/GetImageForm.css'
+
 const API_KEY = 'j190Gpc7EBi2RylIWcZt3z5WdWNs2JQ2Wjcw9F2J'
 
 export default class GetImageForm extends Component {
   constructor (props) {
-    super (props)
+    super(props)
 
     this.state = {
       rover: 'Curiosity',
@@ -50,9 +52,9 @@ export default class GetImageForm extends Component {
   render () {
     return (
       <div>
-        <div className='select-from'>
+        <div className='select-form'>
           <label htmlFor="rover">Rover</label>
-          <select onChange={this.handleRover} id="rover" value={this.state.value}>
+          <select onChange={this.handleRover} id="rover" value={this.state.value} className="rover-select">
             <option value="Curiosity">Curiosity</option>
             <option value="Opportunity">Opportunity</option>
             <option value="Spirit">Spirt</option>
@@ -64,7 +66,7 @@ export default class GetImageForm extends Component {
             <option value="navcam">NAVCAM (Navigation Cam)</option>
           </select>
           <label htmlFor="sol">Martian Sol: 1000-2000</label>
-          <input type="number" onChange={this.handleSol} max="2000" min="1000" value={this.state.value}/>
+          <input type="number" onChange={this.handleSol} max="2000" min="1000" value={this.state.value} />
         </div>
         <div className='button'>
           <GetImageButton onClick={this.fetchRoverImage} />

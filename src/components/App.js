@@ -8,9 +8,8 @@ class App extends Component {
     return (
       <div>
         <BaseLayout>
-        <h1>Mars Rover Cams!</h1>
-        <GetImageForm />
-      </BaseLayout>
+          <GetImageForm />
+        </BaseLayout>
       </div>
     )
   }

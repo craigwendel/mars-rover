@@ -1,0 +1,37 @@
+.main-nav {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.header {
+  background: url('https://thelongestthreads.files.wordpress.com/2015/09/mars-header.jpg?w=1024&h=576&crop=1');
+  background-size: cover;
+  color: #ecf0f1;
+  height: 50vh;
+  text-align: center;
+}
+.header h1 {
+  padding-top: 8%;
+  font-size: 3em;
+  vertical-align: middle;
+}
+
+p {
+  font-size: 1.5rem;
+}
+.footer {
+  text-align: center;
+  background-color: #000;
+  color: #ecf0f1;
+  height: 10vh;
+}
+
+.footer h4 {
+  padding-top: 1.5%;
+}
